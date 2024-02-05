@@ -15,8 +15,8 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         toolchain:
           - {compiler: gcc, version: 13, flags: ['-cpp -O3 -march=native']}
-          - {compiler: intel, version: '2023.2', flags: ['-fpp -O3 -fast']}
-          - {compiler: intel-classic, version: '2021.10', flags: ['-fpp -O3 -fast']}
+          - {compiler: intel, version: '2023.2', flags: ['-fpp -Ofast']}
+          - {compiler: intel-classic, version: '2021.10', flags: ['-fpp -Ofast']}
           - {compiler: nvidia-hpc, version: '23.11', flags: ['-Mpreprocess -Ofast']}
         include:
           - os: ubuntu-latest
