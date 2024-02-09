@@ -6,17 +6,17 @@ option test --compiler gfortran --flag "-cpp -O3 -march=native"
 
 
 @buildifort
-option build --compiler ifort --flag "-fpp -O3 -xHost"
+option build --compiler ifort --flag "-fpp -fast"
 
 @testifort
-option test --compiler ifort --flag "-fpp -O3 -xHost"
+option test --compiler ifort --flag "-fpp -fast"
 
 
 @buildifx
-option build --compiler ifx --flag "-fpp -O3 -xHost"
+option build --compiler ifx --flag "-fpp -fast"
 
 @testifx
-option test --compiler ifx --flag "-fpp -O3 -xHost"
+option test --compiler ifx --flag "-fpp -fast"
 
 
 @buildnvfortran
